@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Flutter action
 
 # Controls when the action will run. 
 on:
@@ -33,6 +33,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Flutter action
+        uses: subosito/flutter-action@v1.4.0
+        
       - name: Print Dart SDK version
         run: dart --version
 
@@ -46,6 +49,4 @@ jobs:
       - name: Run tests
         run: dart test
 
-      - name: Flutter action
-        uses: subosito/flutter-action@v1.4.0
         
