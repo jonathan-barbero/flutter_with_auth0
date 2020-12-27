@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ar.com.mediamaza.flutter.auth0.flutter_with_auth0">
+    package="ar.com.mediamaza.flutter.auth0.flutterwithauth0">
     <!-- Flutter needs it to communicate with the running application
          to allow setting breakpoints, to provide hot reload, etc.
     -->

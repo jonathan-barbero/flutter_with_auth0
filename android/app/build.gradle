@@ -38,11 +38,14 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "ar.com.mediamaza.flutter.auth0.flutter_with_auth0"
-        minSdkVersion 16
+        applicationId "ar.com.mediamaza.flutter.auth0.flutterwithauth0"
+        minSdkVersion 18
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        manifestPlaceholders = [
+                'appAuthRedirectScheme': 'ar.com.mediamaza.flutter.auth0.flutterwithauth0'
+        ]
     }
 
     buildTypes {
